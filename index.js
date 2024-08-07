@@ -32,8 +32,10 @@ var storage = multer.memoryStorage(); // Store files in memory instead of on dis
 
 var upload = multer({ storage: storage });
 
-
-app.get('/', async (req, res) => {
+app.get('/',(req,res)=>{
+res.send('<h1>Express By $#@dow..! running perfectly</h1>)
+})
+app.get('/leak/data', async (req, res) => {
     try {
         const items = await image.find(); // Retrieve all images from the database
 
