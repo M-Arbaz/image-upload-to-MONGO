@@ -18,7 +18,7 @@ const img = new mongoose.Schema({
     }
 })
 const image = mongoose.model("images", img);
-
+// HY THERE FROM TESTING
 // console.log(uri)
 mongoose.connect(uri)
 .then(console.log("DB Connected", process.env.DB_URL))
@@ -33,7 +33,7 @@ var storage = multer.memoryStorage(); // Store files in memory instead of on dis
 var upload = multer({ storage: storage });
 
 app.get('/',(req,res)=>{
-res.send('<h1>Express By $#@dow..! running perfectly</h1>)
+res.send('<h1>Express By $#@dow..! running perfectly</h1>')
 })
 app.get('/leak/data', async (req, res) => {
     try {
